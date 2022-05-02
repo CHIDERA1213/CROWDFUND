@@ -33,6 +33,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 30px 50px 0 50px;
+    
 }
 
 .sticky{
@@ -204,16 +205,17 @@ margin-bottom: 40px;
 .enter{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 25px;
 }
 .enter .dollarbtn {
     background-color:var(--dark-gray);
-    padding: 15px 35px 15px 35px;
+    padding: 10px 1.5rem 10px 1rem;
     border-radius: 25px;
-    margin-left: 200px;
     width: 18%;
+    color: var(--white);
     font-weight: bold;
-
+    text-align: center;
 }
 
 .enter .Continue {
@@ -257,7 +259,7 @@ text-decoration: none;
     margin-top: 25px;
     padding: 10px 15px 10px 15px;
     background-color: var(--moderate-cyan);
-    width: 25%;
+    width: 30%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
@@ -381,6 +383,7 @@ margin-bottom: 20px;
         transform: translate(-50%, -50%);
         border-radius: 8px;
         transition: .5s;
+        z-index: 1;
     }
 
     .navLinks li:nth-of-type(1),.navLinks li:nth-of-type(2){
@@ -432,6 +435,22 @@ margin-bottom: 20px;
     .Bamboo{
         flex-direction: column;
     }
+    #thankYou{
+        width: 65%;
+    }
+    #thankYou .gotitButton{
+        width: 50%;
+    }
+
+    .enter .dollarbtn p{
+        width: 25%;
+        text-align: center;
+    
+    }
+    #backthisProject{
+        top: 100%;
+    }
+    
 }
 
 
