@@ -25,6 +25,7 @@ body{
 #backgroundSecion{
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0)), url(/images/image-hero-desktop.jpg);
     height: 50vh;
+    background-repeat: no-repeat;
 }
 .navBar{
     display: flex;
