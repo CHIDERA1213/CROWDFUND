@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&family=Poppins:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* CSS VARIABLES */
+:root{
+    --moderate-cyan:hsl(176, 50%, 47%);
+    --dark-cyan:hsl(176, 72%, 28%);
+    --dark-gray:hsl(0, 0%, 48%);
+    --white:#fff;
+    --black:#000;
+    --light-gray:#d3d3d3;
+}
+
+body{
+    background-color: whitesmoke;
+    font-family: "Commissioner";
+}
+/* BACKGROUND STYLING */
+#backgroundSecion{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0)), url(/images/image-hero-desktop.jpg);
+    height: 50vh;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px 0 50px;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    width: 100%;
+}
+
+.navLinks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navLinks li{
+   list-style: none;
+   padding: 0 20px;
+}
+.navLinks li a{
+    text-decoration: none;
+    color: var(--white);
+}
+.navToggler{
+    display: none;
+}
+#bodySection .container{
+display: flex;
+text-align: center;
+justify-items: center;
+flex-direction: column;
+background-color: var(--white);
+margin-top: -60px;
+padding: 50px;
+width: 50%;
+margin-right: auto;
+margin-left: auto;
+border-radius: 10px;
+}
+
+#bodySection .container h2{
+    padding:0 0 10px;
+}
+
+#bodySection .container .pboy{
+margin-bottom: 40px;
+}
+
+.mastercraftIcon{
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#bodySection #column1{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+   
+}
+#bodySection #column1 a{
+    text-align: center;
+    padding: 16px 30px;
+    background-color: var(--moderate-cyan);
+    border-radius: 30px;
+    color:var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.column2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-gray);
+    border-radius: 30px;
+}
+.column2 .pboy2{
+    padding: 0 18px 0 7px;
+}
+
+#bodySection2{
+    background-color: var(--white);
+    margin: 30px auto;
+    padding: 50px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+#bodySection2 .container{
+   display: flex;
+   justify-content: space-between;
+  
+}
+#bodySection2 .container .write3{
+    display:block ;
+}
+.write{
+    font-size: 20px;
+}
+
+
+.bgLines{
+    background-color: var(--light-gray);
+    padding-right: 80px;
+    width: 100%;
+    border-radius: 15px;
+    
+}
+.innerBglines{
+    background-color: var(--moderate-cyan);
+    padding: 6px;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+#backthisProject{
+    background-color: var(--white);
+    padding: 17px 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 10px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+
+   
+}
+#closeModal{
+    margin-bottom: 5px;
+    position: absolute;
+    right: 10px;
+}
+.backthisProjectColumn1{
+    border: 2px solid var(--light-gray);
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 32px;
+}
+
+.backthisProjectColumn2{
+    border: 2px solid var(--light-gray);
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 32px;
+}
+
+.backthisProjectColumn3{
+    border: 2px solid var(--light-gray);
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 32px;
+}
+
+.backthisProjectColumn4{
+    border: 2px solid var(--light-gray);
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 32px;
+}
+
+
+.Bamboo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.enter{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.enter .dollarbtn {
+    background-color:var(--dark-gray);
+    padding: 15px 35px 15px 35px;
+    border-radius: 25px;
+    margin-left: 200px;
+    width: 18%;
+    font-weight: bold;
+
+}
+
+.enter .Continue {
+padding: 15px 25px 15px 25px;
+color: var(--white);
+background-color: var(--dark-cyan);
+border-radius: 25px;
+margin-left: 8px;
+text-decoration: none;
+
+}
+
+#thankYou{
+    background-color: var(--light-gray);
+    padding: 40px 1rem 40px 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 28%;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+#thankYou #iconcheck{
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#thankYou .support{
+    margin-top: 70px;
+    text-align: center;
+}
+#thankYou .support h2{
+    margin-bottom: 20px;
+}
+#thankYou .gotitButton {
+    text-align: center;
+    margin-top: 25px;
+    padding: 10px 15px 10px 15px;
+    background-color: var(--moderate-cyan);
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    color: var(--white);
+    cursor: pointer;
+}
+#aboutSection{
+    background-color: var(--white);
+    padding: 17px 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    width: 50%;
+    border-radius: 10px;
+}
+#aboutSection .about h2{
+margin-bottom: 20px;
+}
+#aboutSection .about .featuring{
+    margin-bottom: 20px;
+}
+.bamboStand{
+    border: 2px solid var(--light-gray);
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 32px;
+}
+.bamboStand .selectReward{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.bamboStand .selectReward p{
+    background-color: var(--moderate-cyan);
+    padding: 15px 25px 15px 25px;
+    border-radius: 40px;
+    color: var(--white);
+}
+.backeditionStand{
+    border: 2px solid var(--light-gray);
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 32px;
+}
+.backeditionStand .selectReward{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.backeditionStand .selectReward p{
+    background-color: var(--moderate-cyan);
+    padding: 15px 25px 15px 25px;
+    border-radius: 40px;
+    color: var(--white);
+}
+.Mahogany{
+    border: 2px solid var(--light-gray);
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 32px;
+    color: var(--light-gray);
+}
+.Mahogany .selectReward{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.Mahogany .selectReward p{
+    background-color: var(--dark-gray);
+    padding: 15px 25px 15px 25px;
+    border-radius: 40px;
+    color: var(--white);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERRY */
+@media screen and (max-width:992px) {
+    #bodySection .container{
+        width: 70%;
+    }
+    #bodySection2{
+        width: 70%;
+    }
+
+    #backthisProject{
+        width: 70%;
+    }
+
+    #aboutSection{
+        width: 70%;
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    #backthisProject{
+        width: 90%;
+    }
+    .navToggler{
+        display: block;
+        cursor: pointer;
+    }
+    .navLinks{
+        display: block;
+        background-color: var(--white);
+        width: 80%;
+        position: absolute;
+        top: -30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 8px;
+        transition: .5s;
+    }
+
+    .navLinks li:nth-of-type(1),.navLinks li:nth-of-type(2){
+        border-bottom: 1px solid var(--black);
+    }
+
+    .navLinks li{
+        padding: 20px 20px;
+    }
+
+    .navLinks li a{
+        color: var(--black);
+    }
+    #closeMenu{
+        display: none;
+    }
+
+    #bodySection2{
+        width: 90%;
+    }
+
+    #bodySection .container{
+        width: 90%;
+    }
+    .column2{
+        background-color: var(--white);
+    }
+    .column2 .pboy2{
+        display: none;
+    }
+    .column2 img{
+        width: 80%;
+    }
+    #bodySection2 .container{
+        width: 90%;
+        display: block;
+        text-align: center;
+    }
+    .write{
+        padding: 10px 0;
+    }
+   
+    #aboutSection{
+        width: 90%;
+        font-size:15px
+        
+    }
+
+    .Bamboo{
+        flex-direction: column;
+    }
+}
+
+
+
+@media screen and (max-width:375px) {
+    #bodySection #column1 a{
+        padding: 16px 15px;
+        font-size: 14px;
+    }
+}
